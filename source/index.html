@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>PSČ vyhledávač</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">PSČ vyhledávač</a>
+    <a href="#about" class="w3-right w3-button w3-white">About</a>
+  </header>
+  <body>
+    <div class="w3-row">
+      <input type="search" class="w3-input" placeholder="Začnite psát PSČ">
+      <div class="w3-row" id="suggestions" style="z-index: 2;">
+        <!-- list will be added here from js-->
+      </div>
+    </div>
+    <div class="w3-row">
+      <div style="width:100%;height: 10px;border:1px solid rgb(255, 255, 255);"></div>
+      <center><img src="./map.jpg" style="max-height: 80vh; padding: 20px; text-allign:center"></center>
+      <div style="width:100%;height: 300px;fill:  solid rgb(255, 255, 255);"></div>
+    </div>
+    <script src="./script.js" charset="windows-1252"async></script>
+  </body>
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <h2>About</h2>
+  <div class="multiline">
+    VZI projekt - data structure - Trie<br>
+    VUTID: 208479<br>
+    Roman Červenka<br>
+    <a href = "mailto: 208479@vutbr.cz">208479@vutbr.cz</a> || <a href = "mailto: suitinglake47@gmail.com ">suitinglake47@gmail.com </a>     
+    <br>
+    Tento projekt sa zaoberal použitím dátovej štruktúry Trie pre účely dynamického vyhľadávania PSČ.
+    Konkrétne sú zadané PSČ pre ČR a SR vo formáte json.
+  </div>
+  <div style="width:100%; height:60vh; fill: solid rgb(0, 0, 0);"></div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+</html>
